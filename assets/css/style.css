@@ -272,7 +272,7 @@ article {
   background: var(--border-gradient-onyx);
   width: 30px;
   height: 30px;
-  border-radius: 8px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1331,15 +1331,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 5px;
   }
 
+
   .icon-box {
     width: 48px;
     height: 48px;
-    border-radius: 12px;
+    border-radius: 90px;
     font-size: 18px;
   }
-
-
-
   /**
    * #MAIN
    */
@@ -1348,7 +1346,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-top: 60px;
     margin-bottom: 100px;
   }
-
 
 
   /**

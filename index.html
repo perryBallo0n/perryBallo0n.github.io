@@ -35,13 +35,28 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/perryDash.png" alt="Perry Balloon" width="180">
+          <img src="./assets/images/avatars/perryDash.png" alt="Perry Balloon" width="180">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Ptichka Production">Perry Balloon</h1>
 
-          <p class="title" alt="Ы.">Хд</p>
+          <p class="title" alt="Ы." id="random-text"></p>
+
+              <script>
+            const phrases = [
+                "Бебебе",
+                "Привет! Добро подаловать...сюда!",
+                "Бу",
+                "Пробую рандомчек :)",
+                "Мобильная версия страдает...",
+                "Ы."
+            ];
+
+            const randomIndex = Math.floor(Math.random() * phrases.length);
+
+            document.getElementById('random-text').textContent = phrases[randomIndex];
+        </script>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -117,7 +132,7 @@
             <div class="contact-info">
               <p class="contact-title">Мой Telegram:</p>
 
-              <a href="https://t.me/pti4kaPr0d" class="contact-link">https://t.me/pti4kaPr0d</a>
+              <a href="https://t.me/@perryBallo0n" class="contact-link">@perryBallo0n</a>
             </div>
 
             </li>
@@ -210,7 +225,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/repostsbypricsur.png" alt="Web development icon" width="40">
+                <img src="./assets/images/avatars/repostsbypricsur.png" alt="Web development icon" width="40">
               </div>
    
 
@@ -228,7 +243,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/aswerpublic.png" alt="Web development icon" width="40">
+                <img src="./assets/images/avatars/aswerpublic.png" alt="Web development icon" width="40">
               </div>
    
 
@@ -237,7 +252,7 @@
                 <h4 class="h4 service-item-title">Министерство фиолетовой краски</h4></a>
 
                  <p class="service-item-text">
-                  Паблик друга. Довольно интересный
+                  Паблик друга Асвера. Довольно интересный
                 </p>
               </div>
 
@@ -246,12 +261,12 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/friendlyCrew.png" alt="Web development icon" width="40">
+                <img src="./assets/images/avatars/friendlyCrew.png" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
                 <a href="https://t.me/fr1endlyCr3w" class="contact-link">
-                <h4 class="h4 service-item-title">"Экипаж друзей"</h4>
+                <h4 class="h4 service-item-title">Экипаж друзей</h4>
                 </a>
 
                 <p class="service-item-text">
@@ -272,11 +287,13 @@
           <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/friendlyCrew.png" alt="Web development icon" width="40">
+                <img src="./assets/images/avatars/aswer.png" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Заготовка</h4>
+                <a href="https://artemon4ik8091.github.io/" class="contact-link">
+                <h4 class="h4 service-item-title">Сайт Асвера</h4>
+                </a>
 
                 <p class="service-item-text">
                   Заготовка
@@ -386,7 +403,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Веб-разработка</button>
+              <button data-filter-btn>Основные проекты</button>
             </li>
 
             <li class="filter-item">
@@ -394,11 +411,11 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Python приложения</button>
+              <button data-filter-btn>Проекты Minecraft</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Android-приложения</button>
+              <button data-filter-btn>Проекты Roblox</button>
             </li>
           </ul>
 
@@ -421,22 +438,20 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>веб-разработка</button>
+                <button data-select-item>основные проекты</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>c# приложения</button>
+                <button data-select-item>веб проекты</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>python приложения</button>
+                <button data-select-item>проекты minecraft</button>
               </li>
 
-              
               <li class="select-item">
-                <button data-select-item>android-приложения</button>
+                <button data-select-item>проекты roblox</button>
               </li>
-
 
             </ul>
 
