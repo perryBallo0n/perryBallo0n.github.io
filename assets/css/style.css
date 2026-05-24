@@ -431,7 +431,7 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx-logo);
   border-radius: 90px;
-  border: 2px solid var(--jet-avatars);
+  border: 3px solid var(--jet-avatars);
 }
 
 .info-content .name {
@@ -1171,6 +1171,7 @@ main {
 }
 
 .form-input {
+  background: var(--bg-gradient-jet);
   color: var(--white-2);
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
