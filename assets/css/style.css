@@ -27,7 +27,7 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(191, 31%, 26%) 3%, 
+    hsl(0, 0%, 100%) 3%, 
     hsla(0, 64%, 15%, 0.185) 97%
   );
 
@@ -58,8 +58,8 @@
   );
   --border-gradient-onyx-service: linear-gradient(
     to bottom right, 
-    hsla(216, 90%, 19%, 0.301) 0%, 
-    hsla(249, 59%, 22%, 0.322) 50%
+    hsla(292, 36%, 50%, 0) 0%, 
+    hsla(230, 68%, 44%, 0)
   );
   --border-gradient-onyx-btn: linear-gradient(
     to bottom right, 
@@ -68,24 +68,24 @@
   );
   --text-gradient-blue: linear-gradient(
     to right, 
-    hsl(244, 55%, 25%), 
-    hsl(229, 60%, 42%)
+    hsl(229, 55%, 42%), 
+    hsl(257, 70%, 24%)
   );
 
   /* solid */
 
-  --jet: hsl(229, 71%, 18%);
+  --jet: hsl(285, 100%, 78%);
   --jet-avatars: hsl(43, 61%, 44%);
   --onyx: linear-gradient(200deg, rgb(84, 15, 122),  rgb(38, 29, 81)); 
   --eerie-black-1: linear-gradient(200deg, rgba(58, 51, 116, 0.89),  rgba(57, 20, 105, 0.89)); 
-  --eerie-black-2:linear-gradient(200deg, rgba(59, 23, 94, 0.473),  rgba(61, 69, 161, 0.623)); 
+  --eerie-black-2:linear-gradient(200deg, rgba(255, 255, 255, 0),  rgba(60, 67, 137, 0)); 
   --eerie-black-3: linear-gradient(200deg, rgba(6, 25, 31, 0.938),  rgba(4, 42, 68, 0.836)); 
   --purple-blue: linear-gradient(200deg, rgb(43, 14, 81),  rgb(25, 27, 89)); 
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --light-blue: hsl(214, 77%, 38%);
+  --light-blue: hsl(53, 77%, 38%);
   --vegas-gold: hsl(207, 79%, 46%);
-  --light-gray: hsl(0, 0%, 84%);
+  --light-gray: hsl(0, 0%, 100%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 81%, 39%);
 
@@ -253,7 +253,7 @@ article {
     box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(1px);
-    border: 1px solid rgba(0, 82, 190, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
     z-index: 0;
     overflow: hidden;
@@ -607,6 +607,7 @@ main {
 .navbar-link:hover,
 .navbar-link:focus { color: var(--light-gray-70); }
 
+
 .navbar-link.active { color: var(--light-blue); font-family: "Nunito-ExtraBold"; }
 
 
@@ -690,7 +691,15 @@ main {
 
 .service-content-box { text-align: center; }
 
-.service-item-title { margin-bottom: 7px; }
+.service-item-title { 
+  margin-bottom: 7px;    
+  color: var(--light-gray);
+  font-family: "Nunito-bold";
+  transition: color var(--transition-1);
+}
+
+.service-item-title:hover,
+.service-item-title:focus { color: var(--light-gray-70); }
 
 .service-item-text {
   color: var(--light-gray);
@@ -1803,11 +1812,18 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contacts-list { grid-template-columns: 1fr; }
 
-  .contact-info :is(.contact-link) {
+  .contact-info :is(.contact-link) 
+  {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: var(--light-gray);
+    font-family: "Nunito";
+    transition: color var(--transition-1);
   }
+
+.contact-link:hover,
+.contact-link:focus { color: var(--light-gray-70); }
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
