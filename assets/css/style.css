@@ -245,7 +245,7 @@ html { font-family: var(--ff-nunito); }
 article {
   background: var(--eerie-black-2);
     position: relative;
-    width: 340px;
+    width: 460px;
     padding: 2rem;
     border-radius: 20px;
     isolation: isolate;
