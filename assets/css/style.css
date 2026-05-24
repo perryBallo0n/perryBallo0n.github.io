@@ -245,7 +245,7 @@ html { font-family: var(--ff-nunito); }
 article {
   background: var(--eerie-black-2);
     position: relative;
-    width: 460px;
+    width: 450px;
     padding: 2rem;
     border-radius: 20px;
     isolation: isolate;
@@ -413,7 +413,7 @@ main {
 
 .sidebar {
   margin-bottom: 25px;
-  max-height: 115px;
+  max-height: 130px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -568,7 +568,7 @@ main {
   
   position: relative;
     width: 340px;
-    padding: 2rem;
+    padding: 0.8rem;
     border-radius: 20px;
     isolation: isolate;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
