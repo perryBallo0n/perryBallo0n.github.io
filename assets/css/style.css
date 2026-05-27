@@ -894,6 +894,19 @@ main {
 
 .project-item { display: none; }
 
+.projects-title .title {
+  color: var(--white-1);
+  background: var(--onyx-2);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+  font-family: "Nunito-bold"; 
+  margin-bottom: 20px;
+  
+}
+
 .project-item.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
@@ -1071,6 +1084,19 @@ main {
   z-index: 1;
 }
 
+.blog-posts .title {
+  color: var(--white-1);
+  background: var(--onyx-2);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+  font-family: "Nunito-bold"; 
+  margin-bottom: 20px;
+  
+}
+
 .blog-post-item > a::before {
   content: "";
   position: absolute;
@@ -1162,6 +1188,19 @@ main {
 }
 
 .contact-form { margin-bottom: 10px; }
+
+.contact-form .title {
+  color: var(--white-1);
+  background: var(--onyx-2);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+  font-family: "Nunito-bold"; 
+  margin-bottom: 20px;
+  
+}
 
 .form-title { margin-bottom: 20px; }
 
